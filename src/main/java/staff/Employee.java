@@ -24,8 +24,8 @@ public abstract class Employee {
         return this.salary;
     }
 
-    public void raiseSalary(double amount){
-        this.salary += amount;
+    public double raiseSalary(double amount){
+        return this.salary += amount;
     }
 
     public double payBonus(){
