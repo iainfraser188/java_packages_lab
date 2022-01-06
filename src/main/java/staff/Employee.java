@@ -4,7 +4,7 @@ public abstract class Employee {
 
     private String name;
     private String nationalInsuranceNumber;
-    private int salary;
+    protected int salary;
 
     public Employee(String name, String nationalInsuranceNumber, int salary) {
         this.name = name;
