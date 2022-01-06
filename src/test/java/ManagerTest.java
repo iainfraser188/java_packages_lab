@@ -8,9 +8,10 @@ public class ManagerTest {
 
     Manager manager;
 
-
     @Before
-    public void before() { manager = new Manager("Donald Trump","js 19 64 82 A", 100000, "HR");}
+    public void before() {
+        manager = new Manager("Donald Trump","js 19 64 82 A", 100000, "HR");
+    }
 
     @Test
     public void hasName(){
@@ -48,6 +49,7 @@ public class ManagerTest {
     public void canRaiseSalary(){
         assertEquals(150000, manager.raiseSalary(50000),0.0);
     }
+
     @Test
     public void cantRaiseSalaryByNegative(){
         assertEquals(100000, manager.raiseSalary(-50000),0.0);
