@@ -24,11 +24,12 @@ public abstract class Employee {
         return this.salary;
     }
 
-    
+    public void raiseSalary(double amount){
+        this.salary += amount;
+    }
 
-
-    public String raiseSalary(){
-
+    public double payBonus(){
+        return this.salary * 1.01;
     }
 
 }
